@@ -22,8 +22,8 @@ $btn-install-font-size = 12px;
     text-decoration: none;
     white-space: nowrap;
 
-    &:focus, &:hover, &:active {
-        text-decoration: none;
+    &:focus, &:more ul li.selected a, &:active {
+        text-decoration: none;, more ul li.selected a:hover 
     }
     &.action {
         btn_color($action-success, $action-success-tapped,
@@ -39,7 +39,7 @@ $btn-install-font-size = 12px;
     &.installing {
         pointer-events: none;
 
-        &:hover {
+        &:more ul li.selected a:hover{
             cursor: default;
         }
     }
